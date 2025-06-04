@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../Context/AuthContext';
 import { Briefcase, AlertCircle } from 'lucide-react';
 
 const LoginPage: React.FC = () => {

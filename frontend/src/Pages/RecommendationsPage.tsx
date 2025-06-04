@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../Context/AuthContext';
 import { Zap, MapPin, Briefcase, Calendar, DollarSign, ThumbsUp, AlertCircle } from 'lucide-react';
 
 interface Job {

@@ -1,5 +1,18 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect} from 'react';
 import axios from 'axios';
+
+
+interface Experience {
+  company: string;
+  role: string;
+  duration: string;
+}
+
+interface Education {
+  school: string;
+  degree: string;
+  year: number;
+}
 
 interface User {
   id: number;
@@ -7,9 +20,9 @@ interface User {
   email: string;
   full_name?: string;
   skills: string[];
-  experience: any[];
-  education: any[];
-  preferences: Record<string, any>;
+  experience: Experience[];
+  education: Education[];
+  preferences: Record<string, unknown>; // or define a Preferences interface
 }
 
 interface AuthContextType {

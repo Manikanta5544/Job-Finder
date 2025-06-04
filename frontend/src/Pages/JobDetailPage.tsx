@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import { MapPin, Briefcase, Calendar, DollarSign, CheckCircle, ArrowLeft } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../Context/AuthContext';
 
 interface Job {
   id: number;

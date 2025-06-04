@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../Context/AuthContext';
 import { User, Briefcase, BookOpen, Settings, Plus, X, Save, AlertCircle } from 'lucide-react';
 
 const ProfilePage: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Briefcase, TrendingUp, Zap } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../Context/AuthContext';
 
 const HomePage: React.FC = () => {
   const { isAuthenticated } = useAuth();

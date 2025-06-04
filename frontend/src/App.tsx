@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { AuthProvider, useAuth } from './Context/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import JobListingsPage from './pages/JobListingsPage';
-import JobDetailPage from './pages/JobDetailPage';
-import ProfilePage from './pages/ProfilePage';
-import RecommendationsPage from './pages/RecommendationsPage';
-import HomePage from './pages/HomePage';
+import LoginPage from './Pages/LoginPage';
+import RegisterPage from './Pages/RegisterPage';
+import JobListingsPage from './Pages/JobListingsPage';
+import JobDetailPage from './Pages/JobDetailPage';
+import ProfilePage from './Pages/ProfilePage';
+import RecommendationsPage from './Pages/RecommendationsPage';
+import HomePage from './Pages/Homepage';
 
 // Protected route component
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
